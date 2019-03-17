@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my_image
+{
+border-radius:10px;
+width: 15%;
+filter: drop-shadow(5px 5px 5px #222);
+}
+
+p
+{
+    font-family: "Times New Roman", Times, serif;
+    font-size:20px;
+}
+h3{
+    font-family: "Times New Roman", Times, serif;
+    color: #e67300;
+}
+
+.myDetails
+{
+    padding: 50px;
+    box-shadow: 0px 0px 5px 5px #fff2e6;
+}
+
+.header {
+  
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(#ffd1b3, #fff0e6);
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #ff8000;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #ffe0cc;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #993d00;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar a:not(:first-child) {display: none;}
+  #navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar.responsive {position: relative;}
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+table {
+  border: 1px solid #ffa366;
+  border-collapse: collapse;
+  margin:0;
+  padding:0;
+  width: 80%;
+}
+table tr {
+  border: 1px solid #ffa366;
+  padding: 5px;
+}
+table th, table td {
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size:20px;
+}
+table th {
+    font-family: "Times New Roman", Times, serif;
+    font-size:20px;
+    text-align: left;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+  table td {
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><img src="tinni.jpg" class="my_image"><br>Hi! I am Soumi Bhattacharyya</h2>
+  <p> Skilled Java Developer with experience in Core Java, Advanced Java, JDBC, J2ee-EJB-WebDynpro Application Development.
+        Proficient in technologies such as JSP-Servlets, HTML-CSS-Bootstrap, JavaScript/JQuery (AJAX, Dynamic UI), 
+        Web Services(SOAP & Rest), ECMA Script, Angular JS.</p>
+</div>
+
+<div id="navbar" class="topnav">
+  <a class="nav active" href="#career">Career Objective</a>
+  <a class="nav" href="#education">Education</a>
+  <a class="nav" href="#technical">Technical Skills</a>
+  <a class="nav" href="#employement">Employement Summary</a>
+  <a class="nav" href="#project">Projects</a>
+  <a class="nav" href="#cccomplishment">Accomplishment</a>
+  <a class="nav" href="#personal">Personal Details</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="content">
+    <div class="myDetails" id="career">
+        <h3>Career Objective</h3>
+        <p> To work in a dynamic organization on challenging and innovative assignments and to apply the acquired knowledge, skills and ability to work well with people for the growth and development of the organization and society.</p>
+    </div>
+    <div class="myDetails" id="education">
+        <h3>Education</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year of Passing</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td data-label="Qualification">B.Tech</td>
+                <td data-label="Institution">Heritage Institute of Technology</td>
+                <td data-label="Year of Passing">2016</td>
+                <td data-label="CGPA">8.91</td>
+                </tr>
+                <tr>
+                <td data-label="Qualification">Standard 12th(WBCHSE)</td>
+                <td data-label="Institution">Mission Girls’ High School, Midnapore</td>
+                <td data-label="Year of Passing">2012</td>
+                <td data-label="CGPA">85.6</td>
+                </tr>
+                <tr>
+                <td data-label="Qualification">Standard 10th(WBBSE)</td>
+                <td data-label="Institution">Mission Girls’ High School, Midnapore</td>
+                <td data-label="Year of Passing">2010</td>
+                <td data-label="CGPA">87.75</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="myDetails" id="technical">
+        <h3>Technical Skills</h3>
+        <p><font color="#cc5200">Programming Language:</font> Java, JavaScript, TypeScript, C, DS.
+        <br><font color="#cc5200">Java Skills:</font> core JAVA, Advanced Java, J2EE etc.
+        <br><font color="#cc5200">Web Technologies:</font> Java Script, Ecma Script 6, Angular JS, JQuery (AJAX, Dynamic UI), 
+        Web Services(SOAP & Rest),HTML-CSS-BootStrap, SAP WebDynpro.
+        <br><font color="#cc5200">Integrated Development Environment:</font> Eclipse Oxygen, Net Weaver Developer Studio7.01 &7.3, Visual Studio Code.
+    </div>
+    <div class="myDetails" id="employement">
+        <h3>Employement Summary</h3>
+        <p>Currently working with TATA CONSULTANCY SERVICES as a Java Developer, designing and developing applications.</p>
+        <p>
+        &#8226 Good exposure in Core Java Fundamentals.<br>
+        &#8226 Good exposure in MVC Framework.<br>
+        &#8226 Good hands on experience  in J2EE, EJB and Web Dynpro Application Development.<br>
+        &#8226 Experience of creating and consuming Web Service for various Enterprise to Enterprise communications.<br>
+        &#8226 Good hands on experience  in Web Application development using JSP -Servlets.<br>
+        &#8226 Experience of working using JavaScript, ECMA Script, JQuery-Ajax,HTML-CSS-Bootstrap etc.<br>
+        &#8226 Experience of working in Angular js using visual studio code.<br>
+        &#8226 Experience of understanding client’s data set and presenting the same in dashboards.<br>
+        &#8226 Experience of using JCO Connection in SAP Portal 7.3 and 7.0.<br>
+        &#8226 Experience of using IBM Tivoli Directory Server using LDAP.<br>
+        &#8226 Experience of working with different datasources such as DB2, SQL Server, Oracle Server).
+        &#8226 Experience of working as Net Weaver Administrator in SAP Enterprise Portal.<br>
+        &#8226 Experience of visiting client site and handling client meetings before Go-Live and for UATs.<br>
+        </p>
+    </div>
+    <div class="myDetails" id="project">
+        <h3>Project Summary</h3>
+        <!--project1-->
+        <h4>Project 1</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Consumer Self Service Integration</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>Applications for the utility based consumers with sufficient access rights where they can access and manage their entire account online. Features for end users are:<br>
+                    - User  Login<br>
+                    - View Basic Details(Account, general and technical Informations are shown)<br>
+                    - Update profile<br>
+                    - Mobile No Update<br>
+                    - Forgot Password
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Application Development<br>
+                    &#8226 Access and authorisation management by implementing Roles.<br>
+                    &#8226 Client Handling and change request implementation.<br>
+                    &#8226 Development of custom Web Dynpro java applications using SAP Function modules.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Integration with IBM Tivoli Directory Directory Server using LDAP.<br>
+                    &#8226 SMS Gateway Integration for OTP Verification.<br>
+                    &#8226 Communication between ECC Server to SAP Portal Server using Adaptive RFC Model (Function Modules) to fetch data from SAP Custom tables and standard tables.<br> 
+                    &#8226 Implementation of WebDynpro Applications.
+                </td>
+            </tr>
+        </table>
+
+        <!--project2-->
+        <h4>Project 2</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Online Prepaid Meter Recharge Facility</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>
+                    Consumer with sufficient access rights can access their entire account online. <br>
+                    - SelfRegistration for Prepaid Consumers(Only after successful registration user can avail the below facilities ) <br>
+                    - View Account Balance.<br> 
+                    - Recharge Online(Using Different Payment Gateways).<br>
+                    - View last six month’s Payment History in tabular format and each payment receipt in pdf format.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Application Development<br>
+                    &#8226 Access and authorisation management by implementing Roles.<br>
+                    &#8226 Client Handling and change request implementation.<br>
+                    &#8226 Integration with giant vendor like Billdesk for payment.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Integration with IBM Tivoli Directory Directory Server using LDAP.<br>
+                    &#8226 SMS Gateway Integration for OTP Verification.<br>
+                    &#8226 Communication between ECC Server to SAP Portal Server using Adaptive RFC Model (Function Modules) to fetch data from SAP Custom tables and standard tables.<br> 
+                    &#8226 Connection creation with various data source (DB2, SQL Server, Oracle Server).
+                </td>
+            </tr>
+        </table>
+
+        <!--project3-->
+        <h4>Project 3</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Kiosk Payment Collection Web Service Implementation</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>
+                2 Separate SOAP Web Services are created as per requirement. <br>
+                - Payment Posting.<br>
+                - Fetch Bill Details.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Implementation of SOAP Web Services. <br>
+                    &#8226 Client Handling, communication and change request implementation.<br>
+                    &#8226 Communication with third party for consuming web service.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Implementation of SAP Java Connector to communicate with on-premise SAP systems via SAP's RFC protocol. <br>
+                    &#8226 Implementation of EJB Applications.<br>
+                </td>
+            </tr>
+        </table>
+
+        <!--project4-->
+        <h4>Project 4</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Support Dashboard Implementation</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>
+                Application is a combination of the below features: <br>
+                - Check Voucher Status. <br>
+                - Check Online Payment Status of a particular date. <br>
+                - User Registration - Password Change. <br>
+                - Change Mobile No and Email Id. <br>
+                - Add/Remove from Groups.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Web Application Development. <br>
+                    &#8226 Fetching payment details from different sources and showing them in graphical representation(bar charts).<br>
+                    &#8226 Client Handling and change request implementation.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Integration with IBM Tivoli Directory Directory Server using LDAP. <br>
+                    &#8226 Connection creation with various data source (DB2, SQL Server, Oracle Server).<br>
+                    &#8226 Implementation of  JSP-Servlets, javascript, jQuery, Ajax.<br>
+                </td>
+            </tr>
+        </table>
+
+        <!--project5-->
+        <h4>Project 5</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Application Implementation  for electricity utility Consumers</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>
+                Application is a combination of the below features: <br>
+                - View last six month bills in tabular format and each bill in PDF format. <br>
+                - Online reporting system for power theft and street light outage.<br>
+                - Online Feedback Reporting system.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Web Application Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Requirement Gathering. <br>
+                    &#8226 Application Development and Delivery. <br>
+                    &#8226 Creating responsive JSP pages.<br>
+                    &#8226 Client Handling and change request implementation..
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Connection creation with various data source (DB2, SQL Server, Oracle Server).<br>
+                    &#8226 Implementation of  JSP-Servlets, javascript, jQuery, Ajax.<br>
+                </td>
+            </tr>
+        </table>
+
+
+        <!--project6-->
+        <h4>Project 6</h4>
+        <table style="width:100%;">
+            <tr>
+                <td width="15%">Project Title: </td>
+                <td>Blog Application using Angular</td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td>
+                Application is a combination of the below features: <br>
+                - User can view all the blogs posted by other users. <br>
+                - User can post blogs.<br>
+                - User can update/delete the blogs posted by themselves.<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Role: </td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Responsibilities: </td>
+                <td>&#8226 Requirement Gathering. <br>
+                    &#8226 Application Development. <br>
+                    &#8226 Implementation of Angular<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Implementations: </td>
+                <td>&#8226 Stucturing the project and creating models and components accordingly.<br>
+                    &#8226 Implementation of  services in angular and fetching data using rest APIs.<br>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="myDetails" id="cccomplishment">
+        <h3>Accomplishment</h3>
+        <p>
+        &#8226 Achieved On the Spot Award for Kiosk Service Development at TCS.<br>
+        &#8226 Achieved On the Spot Award for WBSEDCL and Smart Grid Implementation at TCS.<br>
+        &#8226 Certification in HTML-CSS-Foundation and Core-Java-Concepts-Intermediate.<br>
+        &#8226 Diploma holder in Rabindra Sangeet.<br>					
+        </p>
+    </div>
+    <div class="myDetails" id="personal">
+        <h3>Personal Details</h3>
+        <p> 
+        <font color="#cc5200">Date of Birth: </font>1st June, 1994<br>
+        <font color="#cc5200">Gender: </font> Female<br>
+        <font color="#cc5200">Address: </font>Moni Pearl1724, Madurdaha, Kalikapur, Kolkata 700107<br>
+        <font color="#cc5200">Nationality: </font>Indian<br>
+        </p>
+    </div>
+  </div>
+
+<script>
+window.onscroll = function() {myFunctionScroll()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+var navs = navbar.getElementsByClassName("nav");
+for (var i = 0; i < navs.length; i++) {
+  navs[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+function myFunctionScroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function myFunction() {
+  if (navbar.className === "topnav") {
+    navbar.className += " responsive";
+  } else {
+    navbar.className = "topnav";
+  }
+}
+
+</script>
+
+</body>
+</html>
